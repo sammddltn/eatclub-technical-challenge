@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import java.util.Arrays;
 import java.util.List;
 
-@Service
+// @Service - Disabled in favor of ApiRestaurantDataService
 public class MockRestaurantDataService implements RestaurantDataService {
 
     @Override
