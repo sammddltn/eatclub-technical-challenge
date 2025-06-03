@@ -7,4 +7,5 @@ com/eatclub/service/MockRestaurantDataService.class
 com/eatclub/Main.class
 com/eatclub/model/Restaurant.class
 com/eatclub/dto/DealResponse.class
+com/eatclub/dto/PeakDealsResponse.class
 com/eatclub/service/RestaurantDataService.class

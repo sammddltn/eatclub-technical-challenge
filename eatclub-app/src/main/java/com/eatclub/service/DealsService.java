@@ -2,6 +2,7 @@ package com.eatclub.service;
 
 import com.eatclub.dto.DealResponse;
 import com.eatclub.dto.DealsApiResponse;
+import com.eatclub.dto.PeakDealsResponse;
 import com.eatclub.model.Deal;
 import com.eatclub.model.Restaurant;
 import com.eatclub.model.RestaurantData;
@@ -102,5 +103,58 @@ public class DealsService {
         response.setLightning(deal.getLightning());
         response.setQtyLeft(deal.getQtyLeft());
         return response;
+    }
+
+    public PeakDealsResponse calculatePeakDealsTime() {
+        int maxDeals = 0;
+        LocalTime peakStart = null;
+        LocalTime peakEnd = null;
+        
+        LocalTime currentStart = null;
+        int currentDeals = 0;
+        
+        for (int hour = 10; hour <= 23; hour++) {
+            for (int minute = 0; minute < 60; minute += 15) {
+                LocalTime time = LocalTime.of(hour, minute);
+                String timeStr = formatTimeForQuery(time);
+                
+                DealsApiResponse response = getActiveDeals(timeStr);
+                int dealCount = response.getDeals().size();
+                
+                if (dealCount > currentDeals) {
+                    currentStart = time;
+                    currentDeals = dealCount;
+                    maxDeals = dealCount;
+                } else if (dealCount < currentDeals) {
+                    if (currentDeals == maxDeals && currentStart != null) {
+                        peakStart = currentStart;
+                        peakEnd = time;
+                    }
+                    currentDeals = dealCount;
+                }
+            }
+        }
+        
+        if (peakStart == null && currentDeals == maxDeals && currentStart != null) {
+            peakStart = currentStart;
+            peakEnd = LocalTime.of(23, 45);
+        }
+        
+        if (peakStart == null) {
+            return new PeakDealsResponse("12:00am", "12:00am");
+        }
+        
+        return new PeakDealsResponse(
+            formatTimeForResponse(peakStart),
+            formatTimeForResponse(peakEnd)
+        );
+    }
+    
+    private String formatTimeForQuery(LocalTime time) {
+        return time.format(DateTimeFormatter.ofPattern("H:mm"));
+    }
+    
+    private String formatTimeForResponse(LocalTime time) {
+        return time.format(DateTimeFormatter.ofPattern("h:mma")).toLowerCase();
     }
 }

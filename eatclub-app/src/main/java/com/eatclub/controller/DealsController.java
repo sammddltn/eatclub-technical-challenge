@@ -1,6 +1,7 @@
 package com.eatclub.controller;
 
 import com.eatclub.dto.DealsApiResponse;
+import com.eatclub.dto.PeakDealsResponse;
 import com.eatclub.service.DealsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,5 +17,10 @@ public class DealsController {
     @GetMapping("/deals")
     public DealsApiResponse getDeals(@RequestParam String timeOfDay) {
         return dealsService.getActiveDeals(timeOfDay);
+    }
+
+    @GetMapping("/peak-deals")
+    public PeakDealsResponse getPeakDeals() {
+        return dealsService.calculatePeakDealsTime();
     }
 }

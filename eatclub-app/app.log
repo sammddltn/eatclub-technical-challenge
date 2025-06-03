@@ -11,13 +11,14 @@
 [[1;34mINFO[m] Copying 0 resource from src/main/resources to target/classes
 [[1;34mINFO[m] 
 [[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.1:compile[m [1m(default-compile)[m @ [36meatclub-app[0;1m ---[m
-[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 11 source files to /home/samuel/projects/eatclub-technical-challenge/eatclub-app/target/classes
 [[1;34mINFO[m] 
 [[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.3.1:testResources[m [1m(default-testResources)[m @ [36meatclub-app[0;1m ---[m
 [[1;34mINFO[m] skip non existing resourceDirectory /home/samuel/projects/eatclub-technical-challenge/eatclub-app/src/test/resources
 [[1;34mINFO[m] 
 [[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.1:testCompile[m [1m(default-testCompile)[m @ [36meatclub-app[0;1m ---[m
-[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] Changes detected - recompiling the module!
 [[1;34mINFO[m] 
 [[1;34mINFO[m] [1m<<< [0;32mspring-boot-maven-plugin:3.2.0:run[m [1m(default-cli)[0;1m < [0;1mtest-compile[m @ [36meatclub-app[0;1m <<<[m
 [[1;34mINFO[m] 
@@ -33,16 +34,15 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.2.0)
 
-2025-06-03T23:09:06.354+10:00  INFO 95445 --- [           main] com.eatclub.Main                         : Starting Main using Java 21.0.7 with PID 95445 (/home/samuel/projects/eatclub-technical-challenge/eatclub-app/target/classes started by samuel in /home/samuel/projects/eatclub-technical-challenge/eatclub-app)
-2025-06-03T23:09:06.357+10:00  INFO 95445 --- [           main] com.eatclub.Main                         : No active profile set, falling back to 1 default profile: "default"
-2025-06-03T23:09:06.934+10:00  INFO 95445 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
-2025-06-03T23:09:06.941+10:00  INFO 95445 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-06-03T23:09:06.941+10:00  INFO 95445 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
-2025-06-03T23:09:06.971+10:00  INFO 95445 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-06-03T23:09:06.971+10:00  INFO 95445 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 584 ms
-2025-06-03T23:09:07.169+10:00  INFO 95445 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path ''
-2025-06-03T23:09:07.174+10:00  INFO 95445 --- [           main] com.eatclub.Main                         : Started Main in 1.064 seconds (process running for 1.286)
-2025-06-03T23:09:07.705+10:00  INFO 95445 --- [nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-06-03T23:09:07.705+10:00  INFO 95445 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-06-03T23:09:07.706+10:00  INFO 95445 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-Failed to parse time: invalid - Text 'invalid' could not be parsed at index 0
+2025-06-03T23:35:22.945+10:00  INFO 103553 --- [           main] com.eatclub.Main                         : Starting Main using Java 21.0.7 with PID 103553 (/home/samuel/projects/eatclub-technical-challenge/eatclub-app/target/classes started by samuel in /home/samuel/projects/eatclub-technical-challenge/eatclub-app)
+2025-06-03T23:35:22.947+10:00  INFO 103553 --- [           main] com.eatclub.Main                         : No active profile set, falling back to 1 default profile: "default"
+2025-06-03T23:35:23.582+10:00  INFO 103553 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-06-03T23:35:23.592+10:00  INFO 103553 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-03T23:35:23.592+10:00  INFO 103553 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-06-03T23:35:23.634+10:00  INFO 103553 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-03T23:35:23.635+10:00  INFO 103553 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 654 ms
+2025-06-03T23:35:23.866+10:00  INFO 103553 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path ''
+2025-06-03T23:35:23.870+10:00  INFO 103553 --- [           main] com.eatclub.Main                         : Started Main in 1.229 seconds (process running for 1.495)
+2025-06-03T23:35:33.920+10:00  INFO 103553 --- [nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-03T23:35:33.920+10:00  INFO 103553 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-03T23:35:33.921+10:00  INFO 103553 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
