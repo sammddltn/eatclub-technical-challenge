@@ -1,0 +1,10 @@
+/home/samuel/projects/eatclub-technical-challenge/eatclub-app/src/main/java/com/eatclub/model/RestaurantData.java
+/home/samuel/projects/eatclub-technical-challenge/eatclub-app/src/main/java/com/eatclub/model/Restaurant.java
+/home/samuel/projects/eatclub-technical-challenge/eatclub-app/src/main/java/com/eatclub/controller/DealsController.java
+/home/samuel/projects/eatclub-technical-challenge/eatclub-app/src/main/java/com/eatclub/service/DealsService.java
+/home/samuel/projects/eatclub-technical-challenge/eatclub-app/src/main/java/com/eatclub/service/MockRestaurantDataService.java
+/home/samuel/projects/eatclub-technical-challenge/eatclub-app/src/main/java/com/eatclub/dto/DealResponse.java
+/home/samuel/projects/eatclub-technical-challenge/eatclub-app/src/main/java/com/eatclub/service/RestaurantDataService.java
+/home/samuel/projects/eatclub-technical-challenge/eatclub-app/src/main/java/com/eatclub/model/Deal.java
+/home/samuel/projects/eatclub-technical-challenge/eatclub-app/src/main/java/com/eatclub/dto/DealsApiResponse.java
+/home/samuel/projects/eatclub-technical-challenge/eatclub-app/src/main/java/com/eatclub/Main.java
