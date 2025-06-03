@@ -1,7 +1,9 @@
-# EatClub technical challenge
+# EatClub Technical Challenge
 
 **endpoints:**
+
 /deals
+
 /peak-deals
 
 ***
