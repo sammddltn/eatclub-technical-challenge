@@ -86,6 +86,10 @@ public class DealsService {
         LocalTime startTime = parseTime(startTimeStr);
         LocalTime endTime = parseTime(endTimeStr);
         
+        if (startTime == null && endTime == null) {
+            return true;
+        }
+        
         return isTimeInRange(queryTime, startTime, endTime);
     }
 
